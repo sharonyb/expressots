@@ -12,7 +12,7 @@
     "allowSyntheticDefaultImports": true,
     "experimentalDecorators": true,
     "emitDecoratorMetadata": true,
-    "types": ["node", "reflect-metadata", "vitest/globals"]
+    "types": ["node", "reflect-metadata", "vitest/globals","jest"]
   },
   "include": ["packages/core/src/**/*.ts"],
   "files": ["./packages/core/src/index.ts"],

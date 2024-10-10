@@ -14,7 +14,7 @@ abstract class BaseController implements Controller {
    * @param res - The Express response object.
    * @param successStatusCode - The HTTP status code to return upon successful execution.
    */
-  protected async callUseCaseAsync<T>(
+  public async callUseCaseAsync<T>(
     useCase: Promise<T>,
     res: Response,
     successStatusCode: number = 200,
@@ -33,7 +33,7 @@ abstract class BaseController implements Controller {
    * @param res - The Express response object.
    * @param successStatusCode - The HTTP status code to return upon successful execution.
    */
-  protected callUseCase<T>(
+  public callUseCase<T>(
     useCase: T,
     res: Response,
     successStatusCode: number = 200,
